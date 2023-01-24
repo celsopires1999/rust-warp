@@ -1,0 +1,22 @@
+## Quick Dev
+GEt http://localhost:8888/
+
+### Hi
+GET http://localhost:8888/hi
+
+### todos
+GET http://localhost:8888/todos/
+
+### todo: 123
+GET http://localhost:8888/todos/246
+X-Auth-Token: 123.exp.signature
+
+### create
+POST http://localhost:8888/todos
+X-Auth-Token: 123.exp.signature
+content-type: application/json
+
+{
+    "id": 123,
+    "title": "todo 123"
+}
